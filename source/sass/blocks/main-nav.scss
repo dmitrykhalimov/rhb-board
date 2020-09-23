@@ -1,0 +1,25 @@
+.main-nav {
+  @include list-reset;
+
+  grid-row-start: 4;
+
+  list-style: none;
+  padding-top: 20px;
+}
+
+.main-nav__item {
+  margin-bottom: 10px;
+}
+
+.main-nav__item a {
+  @include menu-item;
+}
+
+.main-nav__item svg {
+  margin-right: 10px;
+}
+
+.main-nav__item--active a {
+  @include menu-item;
+  color: $blue;
+}

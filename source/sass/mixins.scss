@@ -6,3 +6,35 @@
   margin: 0;
   padding: 0;
 }
+
+@mixin logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $blue;
+}
+
+@mixin username {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $black;
+}
+
+@mixin nickname {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $gray;
+}
+
+@mixin menu-item {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $dark-blue;
+}

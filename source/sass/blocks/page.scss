@@ -1,0 +1,37 @@
+.page {
+  display: grid;
+  grid-template-areas:
+    "navigation header"
+    "navigation main"
+  ;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 60px 1fr;
+
+  min-height: 100vh;
+
+  outline: 2px solid $gray;
+}
+
+.page__nav {
+  grid-area: navigation;
+
+  display: grid;
+  grid-template-rows: 60px 20px 60px 1fr;
+
+  padding-left: 20px;
+}
+
+.page__nav h1 {
+  @include logo;
+}
+
+.page__header {
+  grid-area: header;
+}
+
+
+.page__main {
+  grid-area: main;
+
+
+}

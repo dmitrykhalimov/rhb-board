@@ -5,24 +5,52 @@
     <title>Шаблон сайта: Gulp + Sass</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
   <body class="page container">
-    <nav class="main-nav">
-      <h1></h1>
+    <nav class="page__nav">
+      <h1>RHB Dashboard</h1>
       <div class="user">
-
+        <img src="./img/profile_photo.png" width="46" height="46" alt="Фото пользователя">
+        <span class="user__name">Unknown bluesman</span>
+        <span class="user__nickname">unknownbluesman</span>
       </div>
-      <ul class="main-nav__list">
-        <li class="main-nav__item"></li>
-        <li class="main-nav__item"></li>
-        <li class="main-nav__item"></li>
-        <li class="main-nav__item"></li>
-        <li class="main-nav__item"></li>
+      <ul class="main-nav">
+        <li class="main-nav__item main-nav__item--active">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-main"></use>
+          </svg>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-audio"></use>
+          </svg>
+          <a href="index.html">Аудио</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-newsongs"></use>
+          </svg>
+          <a href="index.html">Новые песни</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-songlist"></use>
+          </svg>
+          <a href="index.html">Список песен</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-playlist"></use>
+          </svg>
+          <a href="index.html">Плейлисты</a>
+        </li>
       </ul>
     </nav>
-    <header class="page-header">
+    <header class="page__header">
     </header>
-    <main class="page-main">
+    <main class="page__main">
       <section class="tasks">
         <section class="tasks__item"></section>
         <section class="tasks__item"></section>
