@@ -7,9 +7,11 @@
 
 .tasks h2 {
   @include h2-desktop;
+  margin: 0;
 }
 
 .tasks__item h3 {
+  margin: 0;
   @include h3-desktop;
 }
 
@@ -20,4 +22,13 @@
   border: 1px solid #DFDFDF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
   margin-bottom: 20px;
+}
+
+.tasks__sublist {
+  list-style: none;
+  @include list-reset;
+}
+
+.tasks__sublist-item {
+  @include main-text;
 }

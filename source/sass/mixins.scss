@@ -9,14 +9,6 @@
 
 /* fonts */
 
-@mixin logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: $blue;
-}
-
 @mixin username {
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
@@ -49,8 +41,23 @@
   color: $black;
 }
 
+@mixin main-text {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 23px;
+  color: $black;
+}
 
 /* headings */
+
+@mixin logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: $blue;
+}
 
 @mixin h2-desktop {
   font-family: 'Raleway', sans-serif;
