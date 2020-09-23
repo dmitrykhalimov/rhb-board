@@ -48,3 +48,24 @@
   line-height: 23px;
   color: $black;
 }
+
+
+/* headings */
+
+@mixin h2-desktop {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  letter-spacing: 0.01em;
+}
+
+@mixin h3-desktop {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+
+  letter-spacing: 0.01em;
+}

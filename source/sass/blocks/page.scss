@@ -35,5 +35,17 @@
 .page__main {
   grid-area: main;
 
+  @include outline(blue);
 
+  display: grid;
+  grid-template-areas:
+    "tasks reherseal"
+    "tasks gigs"
+  ;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 230px 1fr;
+
+  gap: 20px;
+
+  background-color: rgb(236, 235, 235);
 }

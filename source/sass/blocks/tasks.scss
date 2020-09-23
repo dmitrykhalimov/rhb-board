@@ -1,0 +1,23 @@
+.tasks {
+  margin-top: 20px;
+  margin-left: 20px;
+  grid-area: tasks;
+  background-color: white;
+}
+
+.tasks h2 {
+  @include h2-desktop;
+}
+
+.tasks__item h3 {
+  @include h3-desktop;
+}
+
+.tasks__item {
+  // @include outline(green);
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #DFDFDF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
