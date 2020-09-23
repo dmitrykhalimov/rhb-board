@@ -1,0 +1,9 @@
+.date {
+  @include date;
+  @include outline(green);
+}
+
+.date--renew {
+  color: $blue;
+  margin-left: auto;
+}
