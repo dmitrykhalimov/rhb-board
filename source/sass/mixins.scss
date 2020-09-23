@@ -42,10 +42,18 @@
 }
 
 @mixin main-text {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 17px;
   line-height: 23px;
+  color: $black;
+}
+
+@mixin main-text-mini {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   color: $black;
 }
 
@@ -61,17 +69,18 @@
 
 @mixin h2-desktop {
   font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+
 
   letter-spacing: 0.01em;
 }
 
 @mixin h3-desktop {
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
+  font-weight: 700;
+  font-size: 18px;
   line-height: 22px;
 
   letter-spacing: 0.01em;

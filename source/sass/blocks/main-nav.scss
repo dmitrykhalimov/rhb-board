@@ -8,18 +8,27 @@
 }
 
 .main-nav__item {
-  margin-bottom: 10px;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+  // @include outline(red);
 }
 
 .main-nav__item a {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: center;
   @include menu-item;
 }
 
 .main-nav__item svg {
   margin-right: 10px;
+  // @include outline(green);
 }
 
 .main-nav__item--active a {
   @include menu-item;
   color: $blue;
+  // @include outline(green);
 }

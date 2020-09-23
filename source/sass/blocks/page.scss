@@ -36,7 +36,7 @@
   grid-area: main;
   box-sizing: border-box;
 
-  @include outline(blue);
+  // @include outline(blue);
 
   display: grid;
   grid-template-areas:
@@ -44,7 +44,7 @@
     "tasks gigs"
   ;
   grid-template-columns: 55% 1fr;
-  grid-template-rows: 230px fit-content(200px);
+  grid-template-rows: fit-content(230px) fit-content(200px);
 
   gap: 20px;
 

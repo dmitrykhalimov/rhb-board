@@ -1,0 +1,28 @@
+.username {
+  padding: 2px;
+  @include main-text-mini;
+}
+
+.username:first-of-type {
+  margin-left: 5px;
+}
+
+.username--green {
+  background: lightgreen;
+}
+
+.username--purple {
+  background: plum;
+}
+
+.username--red {
+  background: lightcoral;
+}
+
+.username--blue {
+  background: lightskyblue;
+}
+
+.username--orange {
+  background: orange;
+}

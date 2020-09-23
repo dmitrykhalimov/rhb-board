@@ -1,6 +1,6 @@
 .date {
   @include date;
-  @include outline(green);
+  // @include outline(green);
 }
 
 .date--renew {
