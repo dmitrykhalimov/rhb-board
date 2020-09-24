@@ -80,7 +80,7 @@
       "main"
     ;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: fit-content(60px) 1fr;
 
     outline: 2px solid $gray;
   }
