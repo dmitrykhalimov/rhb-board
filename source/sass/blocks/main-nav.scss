@@ -5,6 +5,8 @@
 
   list-style: none;
   padding-top: 20px;
+
+  box-sizing: border-box;
 }
 
 .main-nav__item {
@@ -22,13 +24,24 @@
   @include menu-item;
 }
 
+.main-nav__item:hover {
+  opacity: 0.7;
+}
+
 .main-nav__item svg {
   margin-right: 10px;
+  fill: $dark-blue;
   // @include outline(green);
 }
 
 .main-nav__item--active a {
-  @include menu-item;
   color: $blue;
-  // @include outline(green);
+}
+
+.main-nav__item--active svg {
+  fill: $blue;
+}
+
+.main-nav__item--disabled {
+  opacity: 0.5;
 }
