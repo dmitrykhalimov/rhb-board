@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Шаблон сайта: Gulp + Sass</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="page container">
+    <nav class="page__nav">
+      <h1>RHB Dashboard</h1>
+      <button class="page__nav-button hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="page__user user">
+        <img src="./img/profile_photo.png" width="46" height="46" alt="Фото пользователя">
+        <span class="user__name">Unknown bluesman</span>
+        <span class="user__nickname">unknownbluesman</span>
+      </div>
+      <ul class="page__menu main-nav">
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-main"></use>
+          </svg>
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-audio"></use>
+          </svg>
+          <a href="audio.html">Аудио</a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-newsongs"></use>
+          </svg>
+          <a href="new-songs.html">Новые песни</a>
+        </li>
+        <li class="main-nav__item">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-songlist"></use>
+          </svg>
+          <a href="songlist.html">Список песен</a>
+        </li>
+        <li class="main-nav__item main-nav__item--disabled">
+          <svg width="20" height="20">
+            <use xlink:href="img/icons/sprite.svg#icon-playlist"></use>
+          </svg>
+          <a href="">Плейлисты</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page__header">
+      <span class="date date--current">Сегондя 23 декабря 2019 года</span>
+      <span class="date date--renew">Обновлено 23 декабря 2019 года</span>
+    </header>
+    <main class="page__main">
+      <section class="songlist">
+        <h2>Список песен в разработке</h2>
+        <table class="songlist__table">
+          <thead>
+            <tr>
+              <th>
+                №
+              </th>
+              <th>
+                Name
+              </th>
+              <th>
+                time
+              </th>
+              <th>
+                tempo
+              </th>
+              <th>
+                length
+              </th>
+              <th>
+                Key
+              </th>
+              <th>
+                Key RHB
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                1
+              </td>
+              <td>
+                Shemekia Copeland – Better not touch
+              </td>
+              <td>
+                4/4
+              </td>
+              <td>
+                118
+              </td>
+              <td>
+                0:03:24
+              </td>
+              <td>
+                E
+              </td>
+              <td>
+                E
+              </td>
+            </tr>
+            <tr>
+              <td>
+                2
+              </td>
+              <td>
+                Jeff Beck - Walking in the Sand
+              </td>
+              <td>
+                12/8
+              </td>
+              <td>
+                96
+              </td>
+              <td>
+                0:04:39
+              </td>
+              <td>
+                Dm
+              </td>
+              <td>
+                Bm
+              </td>
+            </tr>
+            <tr>
+              <td>
+                3
+              </td>
+              <td>
+                Ana Popovic - U Complete Me
+              </td>
+              <td>
+                12/8
+              </td>
+              <td>
+                78
+              </td>
+              <td>
+                0:05:25
+              </td>
+              <td>
+                Cm
+              </td>
+              <td>
+                Cm
+              </td>
+            </tr>
+            <tr>
+              <td>
+                4
+              </td>
+              <td>
+                Joanne Shaw Taylor – Going Home
+              </td>
+              <td>
+                4/4
+              </td>
+              <td>
+                99
+              </td>
+              <td>
+                0:04:50
+              </td>
+              <td>
+                Abm
+              </td>
+              <td>
+                Am
+              </td>
+            </tr>
+            <tr>
+              <td>
+                5
+              </td>
+              <td>
+                Ana Popovic - Fool Proof
+              </td>
+              <td>
+                12/8
+              </td>
+              <td>
+                78
+              </td>
+              <td>
+                0:03:27
+              </td>
+              <td>
+                Em
+              </td>
+              <td>
+                Em
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>

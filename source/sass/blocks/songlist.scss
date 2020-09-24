@@ -1,0 +1,72 @@
+.songlist {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  @include outline(green);
+  background-color: white;
+  margin: 20px;
+  min-height: 80vh;
+}
+
+.songlist h2 {
+  @include h2-desktop;
+  margin-left: 20px;
+}
+
+.songlist__table {
+  box-sizing: border-box;
+  //@include outline(red);
+  margin: 0 auto;
+  width: 90%;
+  border: 1px solid green;
+}
+
+.songlist__table th {
+  background-color: lightblue;
+
+  @include main-text;
+}
+
+.songlist__table td {
+  @include main-text;
+
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.songlist__table td:nth-child(2) {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.songlist__table tr {
+  background-color: rgb(245, 245, 245);
+  height: 50px;
+}
+
+.songlist__table tr:nth-child(2n + 1) {
+  background-color: lightgray;
+}
+
+@media (max-width: 867px) {
+  .songlist {
+    margin: 0;
+  }
+
+  .songlist table {
+    width: 95%;
+  }
+
+  .songlist__table td:nth-child(2) {
+    text-align: left;
+    padding-left: 5px;
+  }
+
+  .songlist__table th:nth-child(3),
+  .songlist__table td:nth-child(3),
+  .songlist__table th:nth-child(5),
+  .songlist__table td:nth-child(5) {
+    display: none;
+  }
+}

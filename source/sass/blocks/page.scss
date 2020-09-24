@@ -10,6 +10,11 @@
   outline: 2px solid $gray;
 
   min-height: 99vh;
+  min-width: 320px;
+}
+
+.page .page__nav-button {
+  display: none;
 }
 
 .page__nav {
@@ -19,6 +24,8 @@
   grid-template-rows: 60px 20px 60px 1fr;
 
   padding-left: 20px;
+
+  border-right: 2px solid lightgray;
 }
 
 .page__nav h1 {
@@ -29,8 +36,8 @@
   grid-area: header;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
-
 
 .page__main {
   grid-area: main;
@@ -49,4 +56,81 @@
   gap: 20px;
 
   background-color: rgb(236, 235, 235);
+}
+
+.page__main--audio {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 1024px) {
+  .page {
+
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: 60px 1fr;
+  }
+
+  .page__main {
+    grid-template-columns: 50% 1fr;
+  }
+}
+
+@media (max-width: 867px) {
+  .page {
+    grid-template-areas:
+      "navigation"
+      "main"
+    ;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(60px) 1fr;
+
+    outline: 2px solid $gray;
+  }
+
+  .page .page__nav-button {
+    display: inline-block;
+  }
+
+  .page__header {
+    display: none;
+  }
+
+  .page__nav-button {
+    position: absolute;
+    right: 5px;
+    top: 7px;
+  }
+
+  .page__nav {
+    grid-template-rows: 60px fit-content(20px) fit-content(60px) 1fr;
+
+    padding-left: 20px;
+  }
+
+  .page__menu {
+    display: none;
+  }
+
+  .page__nav .page__user {
+    display: none;
+  }
+
+  .page__nav--is-active .page__menu {
+    display: block;
+  }
+
+  .page__nav--is-active .page__user {
+    display: grid;
+  }
+
+  .page__main {
+    grid-template-areas:
+    "reherseal"
+    "gigs"
+    "tasks";
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content(230px) fit-content(200px) fit-content(200px);
+
+  }
 }

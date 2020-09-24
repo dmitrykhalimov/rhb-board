@@ -5,3 +5,9 @@
 
   @include outline(green);
 }
+
+@media (max-width: 867px) {
+  .container {
+    padding-right: 0;
+  }
+}

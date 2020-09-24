@@ -11,12 +11,17 @@
   <body class="page container">
     <nav class="page__nav">
       <h1>RHB Dashboard</h1>
-      <div class="user">
+      <button class="page__nav-button hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="page__user user">
         <img src="./img/profile_photo.png" width="46" height="46" alt="Фото пользователя">
         <span class="user__name">Unknown bluesman</span>
         <span class="user__nickname">unknownbluesman</span>
       </div>
-      <ul class="main-nav">
+      <ul class="page__menu main-nav">
         <li class="main-nav__item main-nav__item--active">
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-main"></use>
@@ -27,25 +32,25 @@
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-audio"></use>
           </svg>
-          <a href="index.html">Аудио</a>
+          <a href="audio.html">Аудио</a>
         </li>
         <li class="main-nav__item">
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-newsongs"></use>
           </svg>
-          <a href="index.html">Новые песни</a>
+          <a href="new-songs.html">Новые песни</a>
         </li>
         <li class="main-nav__item">
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-songlist"></use>
           </svg>
-          <a href="index.html">Список песен</a>
+          <a href="songlist.html">Список песен</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item main-nav__item--disabled">
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-playlist"></use>
           </svg>
-          <a href="index.html">Плейлисты</a>
+          <a href="">Плейлисты</a>
         </li>
       </ul>
     </nav>
@@ -112,6 +117,7 @@
       </section>
       <section class="nearest nearest--reherseal">
         <h2>Следующая репетиция</h2>
+        <button class="nearest__button button-expand is-active" type="button"></button>
         <div class="nearest__card">
           <b>A1</b>
           <p class="nearest__date">23 декабря 2018, четверг</p>
@@ -122,6 +128,7 @@
       </section>
       <section class="nearest nearest--gigs">
         <h2>Ближайшие концерты</h2>
+        <button class="nearest__button button-expand is-active" type="button"></button>
         <div class="nearest__card">
           <b>G.A. Blues Club</b>
           <p class="nearest__date">23 декабря 2018, четверг</p>
@@ -142,5 +149,6 @@
         </div>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
