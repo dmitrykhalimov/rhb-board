@@ -28,3 +28,12 @@
   @include nickname;
 }
 
+@media (max-width: 767px) {
+  .user {
+    //display: none;
+  }
+
+  .main-nav {
+    //display: none;
+  }
+}

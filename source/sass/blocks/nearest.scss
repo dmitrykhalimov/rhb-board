@@ -78,6 +78,8 @@
 
 .nearest__card b {
   grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 
 .nearest__date {
@@ -109,3 +111,15 @@
   grid-row-start: 4;
 }
 
+@media (max-width: 1250px) {
+  .nearest__card {
+    grid-template-columns: 1fr fit-content(90px);
+    grid-template-rows: fit-content(20px) fit-content(20px) fit-content(20px) fit-content(20px);
+  }
+}
+
+@media (max-width: 867px) {
+  .nearest {
+    margin-right: 0;
+  };
+}

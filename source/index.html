@@ -11,12 +11,17 @@
   <body class="page container">
     <nav class="page__nav">
       <h1>RHB Dashboard</h1>
-      <div class="user">
+      <button class="page__nav-button hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <div class="page__user user">
         <img src="./img/profile_photo.png" width="46" height="46" alt="Фото пользователя">
         <span class="user__name">Unknown bluesman</span>
         <span class="user__nickname">unknownbluesman</span>
       </div>
-      <ul class="main-nav">
+      <ul class="page__menu main-nav">
         <li class="main-nav__item main-nav__item--active">
           <svg width="20" height="20">
             <use xlink:href="img/icons/sprite.svg#icon-main"></use>
@@ -142,5 +147,6 @@
         </div>
       </section>
     </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
