@@ -113,6 +113,7 @@
 
 @media (max-width: 1250px) {
   .nearest__card {
+
     grid-template-columns: 1fr fit-content(90px);
     grid-template-rows: fit-content(20px) fit-content(20px) fit-content(20px) fit-content(20px);
   }
@@ -120,6 +121,11 @@
 
 @media (max-width: 867px) {
   .nearest {
+    position: relative;
     margin-right: 0;
   };
+
+  .nearest__button.is-active ~ .nearest__card {
+    display: none;
+  }
 }

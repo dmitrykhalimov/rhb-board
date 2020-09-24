@@ -1,0 +1,16 @@
+.button-expand {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  box-sizing: border-box;
+  background: url("../img/fold.svg");
+  border: 0;
+  width: 22px;
+  height: 14px;
+}
+
+.button-expand.is-active {
+  background: url("../img/unfold.svg");
+}
+
+
